@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --lightgrey: hsl(217, 12%, 63%);
+    --mediumgrey: hsl(216, 12%, 54%);
+    --darkblue: hsl(213, 19%, 18%);
+    --verydarkblue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+    --circle: hsl(210, 19%, 21%);
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--verydarkblue);
+}
+
+img{
+    vertical-align: baseline;
+}
+
+
+/*========================
+        rating state
+=========================*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contentMain{
+    width: 100%;
+    max-width: 442px;
+    padding: 0 15px;
+}
+
+.contentWrap{
+    background-color: var(--darkblue);
+    padding:30px;
+    border-radius: 29px;
+}
+
+.starIcon{
+    background-color: var(--circle);
+    padding: 15px 15px 10px 15px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 3px 0 0 3px;
+}
+
+.heading01{
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--white);
+    margin: 38px 0 0 2px;
+    word-spacing: 1.5px;
+}
+
+.paragTxt{
+    color: var(--mediumgrey);
+    line-height: 1.6;
+    font-size: 15px;
+    margin: 15px 0 0 2px;
+}
+
+.ratingWrap{
+    display: flex;
+    justify-content: space-between;
+    max-width: 340px;
+    margin: 26px 0 0 2px;
+}
+
+.ratingCircle{
+    background-color: var(--circle);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--mediumgrey);
+    font-weight: 700;
+}
+
+.ratingCircle:hover{
+    background-color: var(--mediumgrey);
+    color: var(--white);
+}
+
+.ratingCircle.selected{
+    background-color: var(--orange);
+}
+
+.submitBtn{
+    background-color: var(--orange);
+    color: var(--white);
+    width: 100%;
+    max-width: 341px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 32px 0 0 2px;
+    border: none;
+}
+
+.submitBtn:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+/*========================
+    submitted state
+=========================*/
+.submittedState{
+    display: none;
+    text-align: center;
+}
+
+.ratingResult{
+    background-color: var(--circle);
+    display: inline-block;
+    color: var(--orange);
+    padding:11px 20px 7px;
+    border-radius: 30px;
+    margin: 27px 0 0 0;
+}
+
+.csVisual{
+    padding: 15px 8px 0 0;
+}
+
+/*========================
+       viewport: 375px
+=========================*/
+
+@media screen and (max-width: 375px) {
+    
+    .pcOnly{
+        display: none;
+    }
+
+    .contentMain{
+        padding: 0 24px;
+    }
+    
+    .contentWrap{
+        padding:20px;
+        border-radius: 15px;
+    }
+    
+    .starIcon{
+        padding: 13px 13px 9px 13px;
+        margin: 4px 0 0 4px;
+    }
+
+    .starIcon img{
+        width: 13.5px;
+        height: 13.5px;
+    }
+    
+    .heading01{
+        font-size: 24px;
+        margin: 22px 0 0 4px;
+    }
+    
+    .paragTxt{
+        font-size: 14px;
+        margin: 15px 0 0 4px;
+    } 
+
+    .ratingWrap{
+        max-width: 281px;
+        margin: 26px 0 0 4px;
+    }
+    
+    .ratingCircle{
+        width: 42px;
+        height: 42px;
+    }
+
+    .submitBtn{
+        max-width: 279px;
+        padding: 15px 0;
+        border-radius: 30px;
+        letter-spacing: 3px;
+        margin: 23px 0 0 4px;
+    }
+
+    .csVisual img{
+        width: 144px;
+    }
+
+    .csVisual{
+        padding: 14px 0 0 0;
+    }
+
+    .ratingResult{
+        padding:11px 12px 7px 14px;
+        margin: 20px 0 0 0;
+        font-size:14px;
+    }
+
+    .submittedState .heading01{
+        font-weight: 700;
+        font-size: 22px;
+        margin: 31px 0 0 0;
+        word-spacing: 0;
+        letter-spacing: 1.2px;
+    }
+    
+}
+
