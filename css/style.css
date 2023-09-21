@@ -52,25 +52,25 @@ main{
 
 .starIcon{
     background-color: var(--circle);
-    padding: 15px 15px 10px 15px;
+    padding: 16px 15px 12px 16px;
     display: inline-block;
     border-radius: 50%;
-    margin: 3px 0 0 3px;
+    margin: 2px 0 0 2px;
 }
 
 .heading01{
-    font-weight: 400;
-    font-size: 28px;
+    font-weight: 600;
+    font-size: 26px;
     color: var(--white);
-    margin: 38px 0 0 2px;
-    word-spacing: 1.5px;
+    margin: 38px 0 0 3px;
+    letter-spacing: 1.2px;
 }
 
 .paragTxt{
     color: var(--mediumgrey);
     line-height: 1.6;
     font-size: 15px;
-    margin: 15px 0 0 2px;
+    margin: 14px 0 0 2px;
 }
 
 .ratingWrap{
@@ -90,6 +90,8 @@ main{
     justify-content: center;
     color: var(--mediumgrey);
     font-weight: 700;
+    font-size: 16px;
+    padding-top: 5px;
 }
 
 .ratingCircle:hover{
@@ -106,13 +108,14 @@ main{
     color: var(--white);
     width: 100%;
     max-width: 341px;
-    padding: 15px 0;
+    padding: 15px 0 13px;
     text-align: center;
     border-radius: 30px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin: 32px 0 0 2px;
-    border: none;
+    margin: 33px 0 3px 2px;
+    border:none;
+    font: 600 14px 'Overpass';
 }
 
 .submitBtn:hover{
@@ -132,9 +135,9 @@ main{
     background-color: var(--circle);
     display: inline-block;
     color: var(--orange);
-    padding:11px 20px 7px;
+    padding: 10px 19px 7px 21px;
     border-radius: 30px;
-    margin: 27px 0 0 0;
+    margin: 28px 0 0 0;
 }
 
 .csVisual{
@@ -142,8 +145,13 @@ main{
 }
 
 .submittedState .paragTxt{
-    margin-bottom: 15px;
+    margin: 15px 0 17px 0;
 }
+
+.submittedState .heading01{
+    margin: 39px 0 0 0;
+}
+
 /*========================
        viewport: 375px
 =========================*/
@@ -174,10 +182,13 @@ main{
     }
     
     .heading01{
-        font-size: 24px;
-        margin: 22px 0 0 4px;
+        font-size: 22px;
+        font-weight: 700;
+        word-spacing: 0;
+        letter-spacing: 1.2px;
+        margin: 24px 0 0 5px;
     }
-    
+        
     .paragTxt{
         font-size: 14px;
         margin: 15px 0 0 4px;
@@ -185,20 +196,23 @@ main{
 
     .ratingWrap{
         max-width: 281px;
-        margin: 26px 0 0 4px;
+        margin: 26px 0 0 3px;
     }
     
     .ratingCircle{
         width: 42px;
         height: 42px;
+        font-weight: 700;
+        font-size: 13px;
+        padding-top: 5px;
     }
 
     .submitBtn{
         max-width: 279px;
-        padding: 15px 0;
+        padding: 16px 0 12px;
         border-radius: 30px;
-        letter-spacing: 3px;
-        margin: 23px 0 0 4px;
+        letter-spacing: 2px;
+        margin: 23px 0 12px 4px;
     }
 
     .csVisual img{
@@ -216,12 +230,15 @@ main{
     }
 
     .submittedState .heading01{
-        font-weight: 700;
-        font-size: 22px;
         margin: 31px 0 0 0;
         word-spacing: 0;
         letter-spacing: 1.2px;
     }
+
+    .submittedState .paragTxt{
+        margin-bottom: 18px;
+    }
+    
     
 }
 
